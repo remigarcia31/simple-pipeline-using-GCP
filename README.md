@@ -118,7 +118,7 @@ Exécutez le DAG manuellement pour déclencher le processus.
 Ce DAG ingérera les données, les traitera et les stockera dans BigQuery.
 
 ## Nettoyage
-###1. Arrêter les services Docker
+### 1. Arrêter les services Docker
 Pour arrêter les services Docker, exécutez :
 
 
