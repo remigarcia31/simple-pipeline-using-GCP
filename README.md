@@ -56,17 +56,30 @@ cd simple-pipeline-using-GCP
 ```
 
 ### 2. Configurer les variables d'environnement
+https://console.cloud.google.com/
 
 Nous allons créer compte de service :
   1. Allez sur IAM et administration
   2. Cliquez sur "Créer un compte de service"
-     ***insérer image***
-  4. Mettez les droits pour Administrateur BigQuery - Administrateur des objets Storage - Administrateur Storage
-     ***insérer image***
 
-//todo : AJOUTER LES ETAPES POUR GÉNÉRER LE CREDENTIALS
+![](images/[FR]-IAM_creer_compte_service_0.png)
+![](images/[FR]-IAM_creer_compte_service_1.png)
 
-Créez un fichier .env à la racine du projet et définissez les variables nécessaires pour votre configuration GCP.
+  3. Mettez les droits pour Administrateur BigQuery - Administrateur des objets Storage - Administrateur Storage
+
+![](images/[FR]-IAM_creer_compte_service_2.png)
+
+### Générer sa clé GCP
+  1. Cliquez sur votre compte de service et allez sur l'onglet "Clés"
+  
+  ![](images/[FR]-IAM_creer_compte_service_3.png)
+  
+  2. Cliquez sur "Ajouter une clé"
+  3. Créez votre clé sous format .json
+  
+  ![](images/[FR]-IAM_creer_compte_service_4.png)
+
+Créez un fichier [.env](airflow/.env_example) à la racine du projet et définissez les variables nécessaires pour votre configuration GCP.
 Prenez exemple sur le .env_example que j'ai mis sur le repo, modifiez avec vos données.
 
 ### 3. Initialiser Terraform
