@@ -106,6 +106,8 @@ terraform apply
 ```
 Confirmez l'opération en tapant yes lorsque Terraform vous le demande.
 
+Vous pouvez maintenant aller vérifier qu'un Bucket a été créé ainsi qu'un entrepôt de données BigQuery.
+
 ### 5. Démarrer les services Docker
 Une fois l'infrastructure GCP en place :
 
@@ -170,6 +172,8 @@ cd ../terraform
 terraform destroy
 ```
 Confirmez l'opération en tapant yes.
+
+Vous pouvez maintenant aller vérifier que le Bucket a été suprimé ainsi que l'entrepôt de données BigQuery.
 
 ## Ressources supplémentaires
 Pour en savoir plus sur les outils utilisés dans ce projet :
