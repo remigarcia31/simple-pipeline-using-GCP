@@ -3,6 +3,7 @@
 */logs
 *.hcl
 *.json
+!google_credentials.json
 
 images/\[ENG]*
 
