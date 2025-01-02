@@ -154,6 +154,8 @@ Activez le DAG correspondant à votre pipeline.
 Exécutez le DAG manuellement pour déclencher le processus.
 Ce DAG ingérera les données, les traitera et les stockera dans BigQuery.
 
+![](images/[FR]-Airflow_DAGS.png)
+
 ## Nettoyage
 ### 1. Arrêter les services Docker
 Pour arrêter les services Docker, exécutez :
