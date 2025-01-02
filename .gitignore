@@ -4,6 +4,8 @@
 *.hcl
 *.json
 
+images/\[ENG]*
+
 docker-compose.yaml
 variables.tf
 .DS_Store
