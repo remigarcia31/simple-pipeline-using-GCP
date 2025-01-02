@@ -87,6 +87,7 @@ Prenez exemple sur le .env_example que j'ai mis sur le repo, modifiez avec vos d
 ### 3. Initialiser Terraform
 
 Passez en revu toutes les variables présentes dans le fichier [variables.tf](terraform/variables_example.tf).
+
 J'ai mis des commentaires dans le fichier afin que vous compreniez et modifiez correctement vos variables terraform.
 
 Naviguez dans le répertoire Terraform et initialisez l'environnement Terraform :
@@ -106,7 +107,22 @@ terraform apply
 Confirmez l'opération en tapant yes lorsque Terraform vous le demande.
 
 ### 5. Démarrer les services Docker
-Une fois l'infrastructure GCP en place, démarrez les services Docker pour exécuter Airflow :
+Une fois l'infrastructure GCP en place :
+
+Modifiez ces variables du fichier [docker-compte.yaml](airflow/docker-compose_example.yaml)
+```yaml
+    GOOGLE_APPLICATION_CREDENTIALS: CHEMIIN_VERS_VOTRE_CLE.json
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=CHEMIIN_VERS_VOTRE_CLE.json'
+    GCP_PROJECT_ID: 'votre_PROJECT_ID'
+    GCP_GCS_BUCKET: 'votre_BUCKET_NAME'
+
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
+    - ./plugins:/opt/airflow/plugins
+    - /.keys/:/.google/credentials:ro
+```
+Démarrez les services Docker pour exécuter Airflow
 
 ```bash
 cd ../airflow
