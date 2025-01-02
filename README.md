@@ -143,7 +143,7 @@ Utilisez les identifiants par défaut pour vous connecter :
 - Nom d'utilisateur : airflow
 - Mot de passe : airflow
 
-Vous retrouverez les DAGS dans le [data_ingestion_gcs.py](fichier airflow/dags/data_ingestion_gcs.py).
+Vous retrouverez les DAGS dans le fichier [data_ingestion_gcs.py](airflow/dags/data_ingestion_gcs.py).
 
 Je vous ai commenté le code afin de mieux comprendre le fonctionnement de chaque DAG.
 
