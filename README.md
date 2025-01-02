@@ -78,7 +78,9 @@ Nous allons créer compte de service :
   3. Créez votre clé sous format .json
   
   ![](images/[FR]-IAM_creer_compte_service_4.png)
-
+  
+  4. Mettez votre clé dans un dossier /keys situé dans votre dossier terraform (faites comme vous voulez, il faut juste que ça corresponde au path de votre variable ["credentials"](terraform/variables_example.tf))
+  
 Créez un fichier [.env](airflow/.env_example) à la racine du projet et définissez les variables nécessaires pour votre configuration GCP.
 Prenez exemple sur le .env_example que j'ai mis sur le repo, modifiez avec vos données.
 
