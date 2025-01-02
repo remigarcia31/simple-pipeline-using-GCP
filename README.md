@@ -86,7 +86,8 @@ Prenez exemple sur le .env_example que j'ai mis sur le repo, modifiez avec vos d
 
 ### 3. Initialiser Terraform
 
-//todo : AJOUTER LES ETAPES POUR PRÉPARER LES VARIABLES TERRAFORMS
+Passez en revu toutes les variables présentes dans le fichier [variables.tf](terraform/variables_example.tf).
+J'ai mis des commentaires dans le fichier afin que vous compreniez et modifiez correctement vos variables terraform.
 
 Naviguez dans le répertoire Terraform et initialisez l'environnement Terraform :
 
